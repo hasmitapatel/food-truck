@@ -1,0 +1,452 @@
+body {
+  background: #eeeeee;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+
+@font-face {
+  font-family: TheBoldFont;
+  src: url(fonts/theboldfont.ttf);
+}
+/* Scroll bar
+------------------------------------------*/
+
+.scroll-bar {
+  height: 132px;
+  position: relative;
+
+}
+
+.sticky {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  z-index: 100;
+}
+
+.food-truck {
+  position: absolute;
+  bottom: 0;
+
+}
+/* Layout
+------------------------------------------*/
+
+
+.home-page {
+  display: block;
+}
+
+
+
+.wrapper {
+  padding: 1em 0;
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'TheBoldFont', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  color: #c1272d;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+
+nav ul {
+  list-style: none;
+  padding-left: 1em;
+  text-align: center;
+ 
+
+
+  
+}
+
+a:hover {
+  color: crimson;
+}
+
+
+nav ul li {
+  padding: .5em;
+  font-size: 14px;
+}
+
+nav ul li a {
+  margin-right: .8em;
+  font-family: 'TheBoldFont', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #333333;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: crimson;
+}
+
+.parallax {
+  background: url(images/fast-food.png);
+  background-size: cover;
+  height: 700px;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.banner-text {
+  padding: 2em;
+  padding-top: 7em;
+}
+
+.banner-text h1,
+.banner-text p {
+  color: white;
+  text-align: left;
+}
+
+.address,
+.hours {
+  font-family: "TheBoldFont", sans-serif;
+  font-size: 19px;
+}
+
+.column-1 p,
+.column-2 p,
+.column-3 p {
+  padding-bottom: 3em;
+}
+
+.column-1 {
+  background: #6cacd3;
+  padding: 2em;
+  text-align: center;
+  color: white;
+}
+
+.column-2 {
+  background: #f9f9f9;
+  padding: 2em;
+  text-align: center;
+  color: #333333;
+}
+
+.column-3 {
+  background: #225b77;
+  padding: 2em;
+  text-align: center;
+  color: white;
+}
+
+#menus {
+
+  padding-top: 3em;
+  
+
+}
+#menus a {
+  font-size: 2em;
+
+}
+
+
+#menus p {
+  font-family: "TheBoldFont", sans-serif;
+  text-align: center;
+ 
+  
+}
+
+
+.city-menu p, .wynyard-menu p, .ponsonby-menu p {
+  position: absolute;
+  bottom: 6em; 
+  left: 5.8em;
+
+
+}
+
+
+
+.city-menu, .wynyard-menu, .ponsonby-menu {
+  position: relative;
+  
+}
+
+
+footer {
+  background: #333333;
+  color: white;
+  padding: 2em;
+}
+
+.city-menu p a, .wynyard-menu p a, .ponsonby-menu p a {
+  text-decoration: none;
+  color: black;
+
+}
+.city-menu p a:hover{
+  color: crimson;
+}
+
+.wynyard-menu p a:hover{
+  color: crimson;
+  
+}
+
+.ponsonby-menu p a:hover{
+  color: crimson;
+  
+}
+
+.social-media {
+ text-align: center;
+ padding-bottom: 1em;
+
+}
+
+
+.fa-download {
+  padding-right: .2em;
+  color: black;
+}
+
+.fa-download:hover {
+  color: #66ccff;
+}
+
+.column-1 .fa-map-marker, .column-1 .fa-envelope, .column-1 .fa-phone{
+  color: #286b8c;
+  }
+
+  .column-3 .fa-map-marker, .column-3 .fa-envelope, .column-3 .fa-phone{
+  color: #69a9cc;
+  }
+
+.fa-phone, .fa-map-marker, .fa-envelope{
+  color: crimson;
+  margin-right: .5em;
+}
+
+.fa-phone, .fa-map-marker {
+  transform: scale(1.2);
+}
+
+.menu-display {
+
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+
+.menu-display img {
+  width: 100%;
+  height: auto;
+
+}
+
+.fa-facebook-square, .fa-instagram {
+  margin-right: .2em;
+  transform: scale(1);
+  color: white;
+}
+
+.fa-facebook-square:hover {
+  color:#0066cc;
+  cursor: pointer;
+
+}
+
+.fa-instagram:hover {
+  color: crimson;
+  cursor: pointer;
+
+}
+
+
+
+/*-----------------------Mac Desktop------------------------------------*/
+
+@media screen and (min-width: 77em) {
+
+nav {
+  visibility: visible;
+}
+  nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 1em;
+  text-align: center;
+}
+
+#menus {
+  padding-bottom: 5em;
+}
+.menu-display {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+ 
+}
+
+.city-menu, .wynyard-menu, .ponsonby-menu {
+  margin-right: 1em;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.column-1,
+.column-2,
+.column-3  {
+  padding: 3em;
+  width: 33.3%;
+}
+
+.home-page {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  bottom: 19em;
+  right: 19em;
+}
+
+
+
+nav ul li  {
+  margin-right: 3em;
+}
+
+.parallax {
+    position: relative;
+  }
+
+.banner-text {
+    position: absolute;
+    padding: 2em;
+    width: 60%;
+    bottom: 11em;
+    left: 22em;
+
+  }
+
+.banner-text h1 {
+  padding-left: .5em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.banner-text p{
+  padding: 1em 10em;
+  text-align: center;
+  
+  
+}
+
+.city-menu p, .wynyard-menu p, .ponsonby-menu p {
+  position: absolute;
+  bottom: 6em; 
+  left: 7.8em;
+
+}
+
+nav ul li a:hover {
+  color: crimson;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+   margin: 0;
+}
+
+.city-info, .wynyard-info, .ft-info{
+  padding: 0 5em;
+  text-align: center;
+
+
+
+}
+
+@keyframes disappear {
+  from {
+    opacity: 0;
+
+  }
+
+  to {
+    opacity: 1;
+
+  }
+}
+
+
+.social-media {
+  position: absolute;
+  top: 27em;
+  right: 23em;
+  opacity: 0;
+  animation-name: disappear;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+}
+
+
+.fa-facebook-square, .fa-instagram {
+  margin-right: .7em;
+  transform: scale(1.5);
+  color: white;
+}
+
+.fa-facebook-square:hover {
+  color:#0066cc;
+  cursor: pointer;
+
+}
+
+.fa-instagram:hover {
+  color: crimson;
+  cursor: pointer;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
